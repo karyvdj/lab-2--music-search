@@ -22,9 +22,9 @@ export default class Home extends Component {
       <ul>
         {artists.map(artist => (
           <li key={artist.key}>
-            <Link to={`/artists/${artist.id}`}>
-                <img src={artist.imageUrl} alt="Smiley face"/>
-                {artist.name}
+            <Link to={`/artists/${artist.id}`} className="row">
+                <img src={artist.imageUrl} alt="Smiley face" className="col-4"/>
+                <h1 className="col-6">{artist.name}</h1>
             </Link>
           </li>
         ))}

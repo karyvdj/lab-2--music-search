@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+li{
+  list-style: none;
+  margin-bottom: 2em;
+}
+
 p,
 h1,
 h2,

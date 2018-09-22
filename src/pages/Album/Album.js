@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TracksList from "../../components/Albums/TracksList";
+import TracksList from "../../components/Tracks/TracksList";
 
 class Album extends Component {
   state = {
@@ -53,7 +53,11 @@ class Album extends Component {
           </div>
           <div>
             <h1>Tracks:</h1>
-            <TracksList tracks={album.data.tracks}/>
+            {!album.data.tracks || album.data.tracks === [] ?
+              <p>No se encontraron tracks</p>
+              :
+              <TracksList tracks={album.data.tracks}/>
+            }
           </div>
         </React.Fragment>
         }
