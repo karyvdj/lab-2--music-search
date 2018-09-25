@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TracksList from "../../components/Tracks/TracksList";
+import TracksList from "../../components/Tracks";
 
 class Album extends Component {
   state = {
