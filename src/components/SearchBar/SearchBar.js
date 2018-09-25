@@ -15,9 +15,9 @@ class SearchBar extends Component{
                 <input 
                     ref={this.artistRef} 
                     className="col-10" 
-                    placeholder="¿Qué artista buscas?"
+                    placeholder="Artist name"
                 />
-                <button className="col-2 submit">Buscar</button>
+                <button className="col-2 submit">Search</button>
             </form>
         );
     }

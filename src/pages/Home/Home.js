@@ -35,9 +35,10 @@ export default class Home extends Component {
   };
 
   render() {
-    const { search, artists } = this.state;
+    const { search, artists, error} = this.state;
     return (
       <React.Fragment>
+
         <SearchBar onSearch={this.handleSearch}/>
         {!search &&
           artists && (     
@@ -52,6 +53,10 @@ export default class Home extends Component {
               ))}
             </ul>
           )}
+
+          {search && <p>Search ...</p>}
+          
+          {error && <p>{error.message}</p>}  
       </React.Fragment>
       
     );
